@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4C2"
+    android:orientation="vertical"
+    tools:context=".AddEditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recipeTitleTvAAE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Name:"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/nameInputEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="left"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recipeAuthorTvAAE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="Author"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/recipeDateTvAAE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:gravity="right"
+                android:text="Date"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/foodImgIvAAE"
+                android:layout_width="wrap_content"
+                android:layout_height="250sp"
+                android:foregroundGravity="center"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/add" />
+
+            <ImageButton
+                android:id="@+id/cameraBtn"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="200sp"
+                android:layout_marginRight="65sp"
+                android:backgroundTint="#FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/camera" />
+
+            <ImageButton
+                android:id="@+id/galleryBtn"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="200sp"
+                android:layout_marginRight="15sp"
+                android:backgroundTint="#FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/gallery" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/locationTvAAE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:fontFamily="@font/open_sans"
+                android:text="Location"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/locationInputEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categoryTvAAE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:fontFamily="@font/open_sans"
+                android:text="Category"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/categoryInputEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recipeDescTvAAE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:fontFamily="@font/open_sans"
+            android:text="Description"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/descInputEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="10sp"
+            android:ems="10"
+            android:hint="Enter Description here"
+            android:inputType="textMultiLine"
+            android:textColorHint="#CACACA" />
+
+        <TextView
+            android:id="@+id/recipeIngredientsTvAAE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:fontFamily="@font/open_sans"
+            android:text="Ingredients"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ingredientsEtAAE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:ems="10"
+            android:hint="Enter Ingredients here"
+            android:inputType="textMultiLine"
+            android:textColorHint="#CACACA" />
+
+        <TextView
+            android:id="@+id/recipeStepsTvAAE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:fontFamily="@font/open_sans"
+            android:text="Steps"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/stepsEtAAE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:ems="10"
+            android:hint="Enter Steps here"
+            android:inputType="textMultiLine"
+            android:textColorHint="#CACACA" />
+
+        <Button
+            android:id="@+id/submitRecipeBtnAAE"
+            style="@style/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_weight="1"
+            android:text="Post" />
+    </LinearLayout>
+</ScrollView>

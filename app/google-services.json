@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "501914377100",
+    "project_id": "mobdeve-5c86f",
+    "storage_bucket": "mobdeve-5c86f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501914377100:android:507dddf4f05db289fb14a9",
+        "android_client_info": {
+          "package_name": "com.mobdeve.fabelicom.phillipinerecipes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501914377100-23b171513sjhfm5k9dp0g2bjtujskkdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr5GKZaEJV1jnXjMR2Jf4lpygnXxLv36M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501914377100-23b171513sjhfm5k9dp0g2bjtujskkdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
